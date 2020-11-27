@@ -30,7 +30,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/cetak_pdf',[DataController::class,'cetak_pdf'])->name('cetak_pdf');
     Route::resource('income', IncomeController::class);
     Route::get('/outcome',[OutcomeController::class,'index'])->name('outcome.index');
-    Route::get('/cetak',[OutcomeController::class,'cetak']);
+    Route::get('/cetak',[OutcomeController::class,'cetak'])->name('cetak');
     Route::put('/outcome/{id}',[OutcomeController::class,'update'])->name('outcome.update');
     Route::put('/income/{id}/ubah',[IncomeController::class,'ubah'])->name('income.ubah');
     Route::put('/income/{id}/show',[IncomeController::class,'ubah'])->name('income.show');

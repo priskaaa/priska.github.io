@@ -4,7 +4,7 @@
 <div class="card shadow mb-4">
     <div class="card-header py-3 align-items-center justify-content-between d-sm-flex">
       <h6 class="m-0 font-weight-bold text-primary">DATA BARANG KELUAR</h6>
-      <a href="/cetak" class="btn btn-primary" target="_blank">Cetak PDF</a>
+      <a href="{{route('cetak')}}" class="btn btn-primary" target="_blank">Cetak PDF</a>
      
     </div>
     <div class="card-body">
