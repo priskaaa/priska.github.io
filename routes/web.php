@@ -27,7 +27,7 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum'])->group(function () {
     // Route::resource('dashboard', DashboardController::class);
     Route::resource('data',DataController::class);
-    Route::get('/cetak_pdf',[DataController::class,'cetak_pdf']);
+    Route::get('/cetak_pdf',[DataController::class,'cetak_pdf'])->name('cetak_pdf');
     Route::resource('income', IncomeController::class);
     Route::get('/outcome',[OutcomeController::class,'index'])->name('outcome.index');
     Route::get('/cetak',[OutcomeController::class,'cetak']);
